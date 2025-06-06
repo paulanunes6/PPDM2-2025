@@ -1,15 +1,7 @@
-const http = require('http');
+const express = require('express');
+const app = express();
 
-http.createServer((request, response) => {
 
- response.writeHead(200, {
-
-  'Content-Type': 'text/plain'
-
- });
-
- response.write('Hello, '+Math.pow(3, 1)+'º ano!\n');
-
- response.end();
-
-}).listen(8080);
+app.listen(3000, () => {
+    console.log('Servidor rodando na porta 3000');
+});
