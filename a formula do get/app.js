@@ -15,5 +15,5 @@ app.get("/resultado", (req,res)=>{
 })
 
 app.listen(porta, ()=>{
-    console.log('servidor aberto na página https://localhost:3000:${porta}')
+    console.log('servidor aberto na página http://localhost:3000:${porta}')
 })
